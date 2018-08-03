@@ -80,7 +80,7 @@ inquirer
         .then(function(twitterResponse){
           if(twitterResponse.command == 'Read My Tweets'){
             console.log('Tweets!');
-            //create function that will use the client.get command from npm twitter to display latest tweets
+            //write function that will use the client.get command from npm twitter to display latest tweets
           }
           if(twitterResponse.command == 'Post A Tweet'){
             inquirer
@@ -92,9 +92,11 @@ inquirer
                 },
               ])
               .then(function(tweet){
+                // write function using client.post command to update twitter status
                 console.log('done!');
-                console.log('----------------');                    
+                console.log('----------------');                 
                 console.log(`"${tweet.tweet}"`);
+                console.log('----------------');                                 
               })
           }
         })
